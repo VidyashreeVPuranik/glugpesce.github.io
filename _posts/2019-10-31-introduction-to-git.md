@@ -9,7 +9,7 @@ date: 2019-10-31
 
 ![](https://cdn-images-1.medium.com/max/800/1*9VlqcleV4uhord3IzL0pGQ.jpeg)
 
-#### **Contents **
+#### **Contents**
 
 1.  Git
 1.  Why Git ?
@@ -27,12 +27,12 @@ to source code. It was developed by Linus Torvalds.<br> <br>
 Most widely used control system in the world. It keeps track of all the
 modification to the code. Mistakes or error in source code can be overcome by
 looking at the previous changes.<br> And Git repository hosting service i.e.,
-GitHub which is owned by Microsoft.<br> 
+GitHub which is owned by Microsoft.<br><br> 
 **3a. Installtion**<br> a. Download link
 : www.git-scm.com/downloads<br> b. select OS. and download will be made.<br>
 Select GNU/Linux Users<br>    sudo apt-get install git<br>    or<br>    sudo
 add-apt-repository ppa:git-core/ppa<br>    sudo apt update<br>    sudo apt
-install git<br> 
+install git<br><br> 
 **3b. Configuration**<br> git config --global user.name "User
 Name"<br> git config --global user.email "UserName@gmail.com"<br> git config
 --list<br> <br> git config --help<br> <br> Production of SSH key.<br> ssh-keygen
@@ -66,7 +66,7 @@ same example... make some changes in file.<br> git add -A<br> git commit -m
 the name of and followed by branch name<br> git branch -a<br> <br> **Merge
 :**<br> git checkout master<br> git pull origin master<br> git branch
 --merged<br> git merge <branch name><br> git push origin master<br> <br>
-**Delete : **<br> git branch --merged<br> git branch -d <branch name> #delete in
+**Delete :**<br> git branch --merged<br> git branch -d <branch name> #delete in
 directory<br> git branch -a<br> git push origin --delete <branch name><br> git
 branch -a
 
