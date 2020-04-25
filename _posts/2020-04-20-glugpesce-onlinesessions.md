@@ -2,14 +2,15 @@
 layout: post	
 title: GLUG PESCE Online Session
 categories: event	
-date: 2020-04-20
 ---
+<div class="list-group">
 <a href="https://discuss.fsmk.org/t/glug-pesce-online-sessions/1441" rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">GLUG Online Sessions Report</h5>
     </div>
     <small class="text-muted">Updates in FSMK Discuss</small>
  </a>
+</div>
 <div class="list-group">
   <span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
