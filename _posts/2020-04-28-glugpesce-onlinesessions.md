@@ -11,9 +11,9 @@ categories: event
     <small class="text-muted">Updates in FSMK Discuss</small>
  </a>
 </div>
-
-<center><h3> GLUG PESCE Online Sessions </h3></center>
-
+<br>
+<center><h4> GLUG PESCE Online Sessions </h4></center>
+<br>
 <div class="list-group">
   <span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
