@@ -4,11 +4,6 @@ title: Introduction to GNU/LINUX and Free Software
 categories: event
 date: 2018-03-10
 ---
-![img1|460x260](/assets/img/blog/4ffs1.png)
-![img1|460x260](/assets/img/blog/4ffs1.png)
-![img1|460x260](/assets/img/blog/4ffs1.png)
-![img1|460x260](/assets/img/blog/searx_logo.png)
-![img1|460x260](/assets/img/blog/logo_searx_a.png)
 
 <h1>My Understanding of Four Freedoms of Free Software !!!</h1>
 
@@ -47,7 +42,7 @@ We need these tools to be installed.
 
     https://github.com/asciimoo/searx
 
-   >  <img src="screenshots/4ffs1.png" style="float: left; margin-right: 10px; width: 460; height: 260;"/>
+   >  ![img1|230x130](/assets/img/blog/4ffs1.png)
 
    > Click on `Download ZIP`, save it in local machine
     Extract the searx-master zip file to
@@ -94,7 +89,7 @@ We are able to download and study the source code of searx is open and public ca
       127.0.0.1:8888
 
      Hurray Successfull !!!!!
-<img src="screenshots/4ffs2.png" style="float: left; margin-right: 10px; width: 460; height: 260;"/>
+![img1|230x130](/assets/img/blog/4ffs2.png)
 
      _Note :_  `ctrl + c` will abort the hosting in localhost
 
@@ -105,9 +100,9 @@ For simplicity case let's try two task or modification
 
   To talk about the searx source code, it have 6 different theme, amongst it we shall work on Oscar Theme. So for UI of searx they have used the concept of template and static inside which you will find different themes. So firstly let's try to change homepage logo
 
-  <img src="searx/static/themes/oscar/img/searx_logo.png" style="float: left; margin-right: 10px; width: 460; height: 260;"/> 
+  ![img1|230x130](/assets/img/blog/searx_logo.png)
 **instead of** 
-  <img src="searx/static/themes/oscar/img/logo_searx_a.png" style="float: left; margin-right: 10px; width: 460; height: 260;"/>
+  ![img1|230x130](/assets/img/blog/logo_searx_a.png)
 
    In index.html change the name of the image accordingly to get the difference.
 
@@ -116,7 +111,7 @@ For simplicity case let's try two task or modification
    >Hosted by GLUG PESCE, Mandya - searx - a privacy-respecting, hackable metasearch engine
    >glugpesce.github.io
 
-<img src="screenshots/4ffs3.png" style="float: left; margin-right: 10px; width: 460; height: 260;"/>
+![img1|230x130](/assets/img/blog/4ffs3.png)
 
   * Run searx
 
