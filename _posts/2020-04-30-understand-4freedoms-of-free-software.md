@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Introduction to GNU/LINUX and Free Software
+title: Understand Four Freedoms of Free Software
 categories: event
-date: 2018-03-10
+date: 2020-04-30
 ---
 
 <h1>My Understanding of Four Freedoms of Free Software !!!</h1>
