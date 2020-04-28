@@ -89,7 +89,7 @@ We are able to download and study the source code of searx is open and public ca
       127.0.0.1:8888
 
      Hurray Successfull !!!!!
-![img](/assets/img/blog/4ffs2.png =230x130)
+![img1](/assets/img/blog/4ffs2.png)
 
      _Note :_  `ctrl + c` will abort the hosting in localhost
 
@@ -100,9 +100,9 @@ For simplicity case let's try two task or modification
 
   To talk about the searx source code, it have 6 different theme, amongst it we shall work on Oscar Theme. So for UI of searx they have used the concept of template and static inside which you will find different themes. So firstly let's try to change homepage logo
 
-  ![img](/assets/img/blog/searx_logo.png =230x51)
+  ![img1 | 230x51](/assets/img/blog/searx_logo.png)
 **instead of**  
-  ![img](/assets/img/blog/logo_searx_a.png =160x60)
+  ![img1 | 160x60](/assets/img/blog/logo_searx_a.png)
 
    In index.html change the name of the image accordingly to get the difference.
 
@@ -111,7 +111,7 @@ For simplicity case let's try two task or modification
    >Hosted by GLUG PESCE, Mandya - searx - a privacy-respecting, hackable metasearch engine
    >glugpesce.github.io
 
-![img](/assets/img/blog/4ffs3.png =230x130)
+![img1](/assets/img/blog/4ffs3.png)
 
   * Run searx
 
