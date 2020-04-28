@@ -42,7 +42,7 @@ We need these tools to be installed.
 
     https://github.com/asciimoo/searx
 
-   >  ![img](/assets/img/blog/4ffs1.png =230x130)
+   >  ![img1](/assets/img/blog/4ffs1.png =230x130)
 
    > Click on `Download ZIP`, save it in local machine
     Extract the searx-master zip file to
