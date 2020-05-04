@@ -56,14 +56,14 @@ date: 2020-04-20
     <p class="mb-1">Nirbhay, Yashashwini</p>
     <small class="text-muted"></small>
   </span>
-   <span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
+   <a href="https://glugpesce.github.io/event/2020/04/30/understand-4freedoms-of-free-software.html" rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Lets implement Four Freedoms of Free Software</h5>
       <small class="text-muted">30th April, 2020</small>
     </div>
     <p class="mb-1">zphoenix</p>
-    <small class="text-muted"></small>
-  </span>
+    <small class="text-muted">Click to view the blog</small>
+  </a>
     <span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Open Hardware & its philosophy</h5>
