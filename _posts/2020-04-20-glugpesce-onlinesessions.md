@@ -48,7 +48,7 @@ date: 2020-04-20
       <p class="mb-1">Shijil [President, FSMK], Nirbhay</p>
     <small class="text-muted"></small>
   </span>
-  <<span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
+  <span rel="noopener noreferrer" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Localisation</h5>
       <small class="text-muted">28th April, 2020</small>
