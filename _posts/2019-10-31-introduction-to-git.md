@@ -66,20 +66,21 @@ looking at the previous changes.<br> And Git repository hosting service i.e., Gi
    Copy id_rsa.pub content by going to C drive -> User -> UserAccount -> .ssh<br><br>
 ### 4. Existing project to Git Repository<br> 
 Navigate to project folder from terminal<br> 
-`To Git file will be created if the command was executed correctly` 
+
+* `To Git file will be created if the command was executed correctly` 
 
     git init 
     
-`staging area : The directory we use to organize files that are tracked and committed before pushing it to the repo.`   
+* `staging area : The directory we use to organize files that are tracked and committed before pushing it to the repo.`   
     
     git status
     
-`To add all files &  To add a single file`
+* `To add all files &  To add a single file`
    
     git add -A 
     git add filename 
     
-`To remove all files & To Remove files from staging area :` 
+* `To remove all files & To Remove files from staging area :` 
 
     git reset 
     git reset filename
@@ -87,11 +88,11 @@ Navigate to project folder from terminal<br>
 
 ### 5. Commit<br> 
 
-`To commit`
+* `To commit`
 
     git commit -m "First Commit" #-m is message passed
     
-`To can view our commits`
+* `To can view our commits`
 
     git log 
    <br>
@@ -99,7 +100,7 @@ Navigate to project folder from terminal<br>
 ### 6. Clone and Push a repository<br> 
 To track an existing repo
 
-    git clone <url> 
+* git clone <url> 
     
    Example : 
    
@@ -112,19 +113,19 @@ To track an existing repo
     
 If several people are working on a single project<br> 
 
-`locations where our repo will get external commit or push`
+* `locations where our repo will get external commit or push`
 
     git remote -v 
     
-`list all git branches`    
+* `list all git branches`    
     
     git branch -a 
     
-`pull changes from remote repo`
+* `pull changes from remote repo`
 
     git pull origin master 
     
-`pushes changes to remote repo i.e., master branch`    
+* `pushes changes to remote repo i.e., master branch`    
     
     git push origin master 
     
@@ -135,22 +136,24 @@ If several people are working on a single project<br>
 Usually a developer will create his/her own branch then add things or report.<br> 
 
     git branch <branch name> 
-`shows all branches`    
+    
+* `shows all branches`    
     
     git branch 
     
-`switches branch<br> <br> `    
+* `switches branch<br> <br> `    
     
     git checkout <branch name> 
     
-Example : 
-same example... make some changes in file and then<br> 
+* Example : 
+  same example... make some changes in file and then<br> 
 
     git add -A
     git commit -m "Update 2"
     
 **Push :**<br> 
-`Origin is the name of and followed by branch name`
+
+* `Origin is the name of and followed by branch name`
 
     git push -u origin <branch name> 
     git branch -a
