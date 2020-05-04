@@ -29,19 +29,19 @@ modification to the code. Mistakes or error in source code can be overcome by
 looking at the previous changes.<br> And Git repository hosting service i.e., Gitlab, Mercury, GitHub few more.<br><br> 
 
 ### 3a. Installation<br> 
-* ##### GNU/Linux Users
+* #### GNU/Linux Users
        sudo apt-get install git
      or
        sudo add-apt-repository ppa:git-core/ppa
        sudo apt update
        sudo apt install git
  
-* ##### Windows Users<br>
+* #### Windows Users<br>
   Download from link : www.git-scm.com/downloads<br> Select OS and 32bit or 64bit based on your requirement.<br>
 
 ### 3b. Configuration & Production of SSH key<br> 
 
-##### Configuring
+#### Configuring
 
     git config --global user.name "UserName"
     git config --global user.email "UserName@gmail.com"
@@ -49,17 +49,19 @@ looking at the previous changes.<br> And Git repository hosting service i.e., Gi
     
     git config --help #For manual page or help page
     
-##### Production of SSH Key
+#### Production of SSH Key
    
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     eval $(ssh-agent -s)
     ssh-add ~/.ssh/id_rsa
     
-   GNU\Linux User :
+    
+   * GNU\Linux User :
    
     xclip -sel clip <~/.ssh/id_rsa.pub
    
-   Windows User :
+   
+   * Windows User :
    
    Copy id_rsa.pub content by going to C drive -> User -> UserAccount -> .ssh<br><br>
 ### 4. Existing project to Git Repository<br> 
