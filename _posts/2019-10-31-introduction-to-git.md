@@ -5,12 +5,10 @@ categories: event
 date: 2019-10-31
 ---
 
-### Introduction to Git
-
 ![](https://cdn-images-1.medium.com/max/400/1*9VlqcleV4uhord3IzL0pGQ.jpeg)
 
 
-#### **Contents**
+## **Contents**
 
 1.  Git
 1.  Why Git ?
@@ -22,28 +20,28 @@ date: 2019-10-31
 
 ![](https://cdn-images-1.medium.com/max/400/1*Ju-X7VzkCnYT7UngdT26Qw.png)
 
-##### 1. Git<br> 
+### 1. Git<br> 
 Git is a Open-Source distributed control system to manage changes
 to source code. It was developed by Linus Torvalds.<br> <br> 
-##### 2. Why Git?<br>
+### 2. Why Git?<br>
 Most widely used control system in the world. It keeps track of all the
 modification to the code. Mistakes or error in source code can be overcome by
 looking at the previous changes.<br> And Git repository hosting service i.e., Gitlab, Mercury, GitHub few more.<br><br> 
 
-##### 3a. Installation<br> 
-* ###### GNU/Linux Users
+### 3a. Installation<br> 
+* ##### GNU/Linux Users
        sudo apt-get install git
      or
        sudo add-apt-repository ppa:git-core/ppa
        sudo apt update
        sudo apt install git
  
-* ###### Windows Users<br>
+* ##### Windows Users<br>
   Download from link : www.git-scm.com/downloads<br> Select OS and 32bit or 64bit based on your requirement.<br>
 
-##### 3b. Configuration & Production of SSH key<br> 
+### 3b. Configuration & Production of SSH key<br> 
 
-###### Configuring
+##### Configuring
 
     git config --global user.name "UserName"
     git config --global user.email "UserName@gmail.com"
@@ -51,20 +49,20 @@ looking at the previous changes.<br> And Git repository hosting service i.e., Gi
     
     git config --help #For manual page or help page
     
-###### Production of SSH Key
+##### Production of SSH Key
    
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     eval $(ssh-agent -s)
     ssh-add ~/.ssh/id_rsa
     
-   **GNU\Linux User :**
+   GNU\Linux User :
    
     xclip -sel clip <~/.ssh/id_rsa.pub
    
-   **Windows User :**
+   Windows User :
    
    Copy id_rsa.pub content by going to C drive -> User -> UserAccount -> .ssh<br><br>
-##### 4. Existing project to Git Repository<br> 
+### 4. Existing project to Git Repository<br> 
 Navigate to project folder from terminal<br> 
 `To Git file will be created if the command was executed correctly` 
 
@@ -77,12 +75,12 @@ Navigate to project folder from terminal<br>
     git add -A 
     git add filename 
     
-`#To remove all files & To Remove files from staging area :` 
+`To remove all files & To Remove files from staging area :` 
 
     git reset 
     git reset filename
 <br> 
-##### 5. Commit<br> 
+### 5. Commit<br> 
 
 `To commit`
 
@@ -92,7 +90,7 @@ Navigate to project folder from terminal<br>
     git log 
    <br>
    
-##### 6. Clone and Push a repository<br> 
+### 6. Clone and Push a repository<br> 
 To track an existing repo
 
     git clone <url> 
@@ -123,7 +121,7 @@ If several people are working on a single project<br>
     
    <br>
    
-##### 7. Create a branch for Issues, Push, Merge, Delete a repository after commit
+### 7. Create a branch for Issues, Push, Merge, Delete a repository after commit
 **Branch :**
 Usually a developer will create his/her own branch then add things or report.<br> 
 
