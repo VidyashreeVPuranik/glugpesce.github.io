@@ -69,9 +69,11 @@ Navigate to project folder from terminal<br>
 `To Git file will be created if the command was executed correctly` 
 
     git init 
+    
 `staging area : The directory we use to organize files that are tracked and committed before pushing it to the repo.`   
     
     git status
+    
 `To add all files &  To add a single file`
    
     git add -A 
@@ -82,11 +84,13 @@ Navigate to project folder from terminal<br>
     git reset 
     git reset filename
 <br> 
+
 ### 5. Commit<br> 
 
 `To commit`
 
     git commit -m "First Commit" #-m is message passed
+    
 `To can view our commits`
 
     git log 
@@ -111,12 +115,15 @@ If several people are working on a single project<br>
 `locations where our repo will get external commit or push`
 
     git remote -v 
+    
 `list all git branches`    
     
     git branch -a 
+    
 `pull changes from remote repo`
 
     git pull origin master 
+    
 `pushes changes to remote repo i.e., master branch`    
     
     git push origin master 
@@ -131,6 +138,7 @@ Usually a developer will create his/her own branch then add things or report.<br
 `shows all branches`    
     
     git branch 
+    
 `switches branch<br> <br> `    
     
     git checkout <branch name> 
