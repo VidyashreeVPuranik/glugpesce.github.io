@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understand Four Freedoms of Free Software
+title: Getting started with Flask
 categories: event
 date: 2019-10-30
 author: zphoenix
