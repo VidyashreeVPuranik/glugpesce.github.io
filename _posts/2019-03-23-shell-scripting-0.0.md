@@ -3,6 +3,7 @@ layout: post
 title: Shell Scripting 0.0
 categories: event
 date: 2019-03-23
+author: zphoenix
 ---
 ## SHELL SCRIPTING 0.0
 
