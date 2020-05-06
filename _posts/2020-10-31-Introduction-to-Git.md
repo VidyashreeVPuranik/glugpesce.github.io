@@ -1,4 +1,11 @@
-﻿### Introduction to Git
+---
+layout: post
+title: Introduction to Git
+categories: event
+date: 2020-10-31
+author: zphoenix
+---
+### Introduction to Git
 
 ![](https://cdn-images-1.medium.com/max/400/1*9VlqcleV4uhord3IzL0pGQ.jpeg)
 
