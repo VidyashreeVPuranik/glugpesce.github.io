@@ -3,6 +3,7 @@ layout: post
 title: Understand Four Freedoms of Free Software
 categories: event
 date: 2020-04-30
+author: zphoenix
 ---
 
 <h1>My Understanding of Four Freedoms of Free Software !!!</h1>
