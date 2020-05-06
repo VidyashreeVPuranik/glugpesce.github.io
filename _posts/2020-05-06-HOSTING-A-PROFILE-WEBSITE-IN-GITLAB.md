@@ -1,4 +1,11 @@
-﻿# HOSTING A PROFILE WEBSITE IN GITLAB  
+---
+layout: post
+title: Understand Four Freedoms of Free Software
+categories: event
+date: 2020-04-30
+author: Nidhi KS
+---﻿
+# HOSTING A PROFILE WEBSITE IN GITLAB  
     
    Hosting a website which you  have designed is everyone's dream. If its yours too then  read along the blog and have in fact  hosted too.
 
