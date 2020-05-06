@@ -1,3 +1,10 @@
+---
+layout: post
+title: Understand Four Freedoms of Free Software
+categories: event
+date: 2019-10-30
+author: zphoenix
+---
 ## FLASK Session
 
 #### **#Flask**Flask session handled on 30th & 31st October 2019.
