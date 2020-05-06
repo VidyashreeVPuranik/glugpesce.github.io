@@ -2,8 +2,8 @@
 layout: post
 title: Hosting a Profile in Gitlab
 categories: event
-date: 2020-04-30
-author: Nidhi KS
+date: 2020-05-06
+author: Nidhi
 ---
 
 # HOSTING A PROFILE WEBSITE IN GITLAB  
