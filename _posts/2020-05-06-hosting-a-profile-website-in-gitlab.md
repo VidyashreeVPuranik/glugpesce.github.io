@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Understand Four Freedoms of Free Software
+title: Hosting a Profile in Gitlab
 categories: event
 date: 2020-04-30
 author: Nidhi KS
----﻿
+---
+
 # HOSTING A PROFILE WEBSITE IN GITLAB  
     
    Hosting a website which you  have designed is everyone's dream. If its yours too then  read along the blog and have in fact  hosted too.
@@ -22,7 +23,7 @@ Click on https://gitlab.com/ -> Select the  register  button and create an accou
 
 #### Installing Git & Configuaration
 
-      sudo apt install git
+    sudo apt install git
     or
     
     sudo add-apt-repository ppa:git-core/ppa
