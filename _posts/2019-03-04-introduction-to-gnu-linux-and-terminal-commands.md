@@ -3,6 +3,7 @@ layout: post
 title: Introduction to GNU/Linux and Terminal Commands
 categories: event
 date: 2019-03-04
+author: zphoenix
 ---
 ### What is GNU/Linux?
 
