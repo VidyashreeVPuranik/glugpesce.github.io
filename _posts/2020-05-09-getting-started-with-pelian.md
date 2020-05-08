@@ -210,7 +210,7 @@ We all may run different python environments and with different versions and we 
 - #### CI/CD Configuration<hr>
    So go to CI/CD - > pipeline -> jobs<br>
    If the status of your job is `passed` then your Pelican based Blog Site you will find it at `blog-username.gitlab.io`<br><br>
-   So your dream come true your very own Blog site LIVE !!!
+   So your dream come true your very own Blog site LIVE !!! - Check out it here - blog-zphoenix.gitlab.io
 <br>
 
 ### 8. Futuristic
@@ -239,6 +239,6 @@ If any errors do ping me  or if you had a better pelican hosted share it with me
 - [Pelican Documentation](https://docs.getpelican.com/en/stable/)
 - Pelican examples on Gitlab : 
 
- - [Gitlab on Pelican](https://gitlab.com/pages/pelican)
- - [VoidSpaceXYZ's example hosted](https://voidspacexyz.gitlab.io/pages/)
+   - [Gitlab on Pelican](https://gitlab.com/pages/pelican)
+   - [VoidSpaceXYZ's example hosted](https://voidspacexyz.gitlab.io/pages/)
 
