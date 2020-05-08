@@ -33,23 +33,23 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 ### 1. Installations
 ---
 - #### Install Python<hr>
- `sudo add-apt-repository ppa:jonathonf/python-3.6`<br>
- `sudo apt-get update && sudo apt-get install python3.6`
+  `sudo add-apt-repository ppa:jonathonf/python-3.6`<br>
+  `sudo apt-get update && sudo apt-get install python3.6`
 
 - #### Install PIP<hr>
- `sudo apt install python3-pip`<br>
- `sudo apt install build-essential python3-dev`
+  `sudo apt install python3-pip`<br>
+  `sudo apt install build-essential python3-dev`
 
 - #### Install Git<hr>
- `sudo apt install git`<br>
-  if any erro persists try <br>
- `sudo add-apt-repository ppa:git-core/ppa`<br>
- `sudo apt update`<br>
- `sudo apt install git`
+  `sudo apt install git`<br>
+   if any error persists try <br>
+  `sudo add-apt-repository ppa:git-core/ppa`<br>
+  `sudo apt update`<br>
+  `sudo apt install git`
       
 - #### Install Virtualenv<hr>
- `sudo apt install virtualenv`<br>
- `virtualenv pelican`
+  `sudo apt install virtualenv`<br>
+  `virtualenv pelican`
 <br>
 
 ### 2. Configuration
@@ -59,7 +59,7 @@ It creates an environment and its suggested to overcome conflits when multiple p
 
  `virtualenv pelican`<br>
  `cd pelican`<br>
- `source bin/activate`<br><br>  
+ `source bin/activate`<br>
   Output<br>
   `(pelican) z@zphoenix:~/pelican$`
 <br>
@@ -126,33 +126,33 @@ It creates an environment and its suggested to overcome conflits when multiple p
 ---
 
 - #### Create a blog post <hr>
- `cd content`<br>
- `touch firstPost.md` #To create the file<br>
- `nano firstPost.md` #To open the file<br>
+  `cd content`<br>
+  `touch firstPost.md` #To create the file<br>
+  `nano firstPost.md` #To open the file<br>
  
- Add these below contents 
+  Add these below contents 
 
-```
-Title: My First Post<br>
-Date: 2020-05-08 18:59<br>
-Modified: 2020-05-09 19:30<br>
-Category: Python<br>
-Tags: pelican, publishing<br>
-Slug: my-super-post<br>
-Authors: zphoenix, GLUG PESCE<br>
-Summary: Short version for index and feeds<br><br>
+  ```
+  Title: My First Post<br>
+  Date: 2020-05-08 18:59<br>
+  Modified: 2020-05-09 19:30<br>
+  Category: Python<br>
+  Tags: pelican, publishing<br>
+  Slug: my-super-post<br>
+  Authors: zphoenix, GLUG PESCE<br>
+  Summary: Short version for index and feeds<br><br>
  
- This is the content of my super blog post.
-```
+   This is the content of my super blog post.
+  ```
 
  _Note_ : Reference - https://docs.getpelican.com/en/3.6.3/content.html
  
  Once you are donepress `ctrl + s` to save and `ctrl + x` to exit from nano editor.<br>
 - #### Convert post into html<br>
- `pelican content`<br>
- or<br>
- `make html`<br>
- Try to check if public folder is created, if that has generated procedd, else cross check and try again!!!<br>
+  `pelican content`<br>
+  or<br>
+  `make html`<br>
+  Try to check if public folder is created, if that has generated procedd, else cross check and try again!!!<br>
  
 
 ###  6. The OUTPUT
@@ -183,11 +183,11 @@ We all may run different python environments and with different versions and we 
 
 - #### .gitlab-ci.yml<hr>
   It is a configuration file that will build and deploy or host our website in Gitlab Pages.<br>
-  `touch .gitlab-ci.yml`<br>
-  `nano .gitlab-ci.yml`<br><br>
-  Paste these content in `.gitlab-ci.yml`<br>
+   `touch .gitlab-ci.yml`<br>
+   `nano .gitlab-ci.yml`<br><br>
+   Paste these content in `.gitlab-ci.yml`<br>
 
-```
+  ```
    image: python:3.6-alpine
 
    pages:
@@ -197,21 +197,20 @@ We all may run different python environments and with different versions and we 
      artifacts:
        paths:
        - public/
-```
+ ```
 
 - #### Lets PUSH !!!<br>
    Now lets push the pelican source code.
    
-```
-   git add .
-   git commit -m "First Commit to add Pelican Blog Site"
-   git push
-```
+  ```
+    git add .
+    git commit -m "First Commit to add Pelican Blog Site"
+    git push
+  ```
 - #### CI/CD Configuration<hr>
-So go to CI/CD - > pipeline -> jobs<br>
-If the status of your job is `passed` then your Pelican based Blog Site you will find it at `blog-username.gitlab.io`<br><br>
-So your dream come true your very own Blog site LIVE !!!
-
+   So go to CI/CD - > pipeline -> jobs<br>
+   If the status of your job is `passed` then your Pelican based Blog Site you will find it at `blog-username.gitlab.io`<br><br>
+   So your dream come true your very own Blog site LIVE !!!
 <br>
 
 ### 8. Futuristic
@@ -237,10 +236,10 @@ If any errors do ping me  or if you had a better pelican hosted share it with me
 
 **Reference**<hr>
 
-- Git and Git Configuration : https://glugpesce.github.io/event/2019/10/31/introduction-to-git.html
-- Pelican Documentation : https://docs.getpelican.com/en/stable/
+- [Git and Git Configuration](https://glugpesce.github.io/event/2019/10/31/introduction-to-git.html)
+- Pelican Documentation](https://docs.getpelican.com/en/stable/)
 - Pelican examples on Gitlab : 
 
- - Gitlab on Pelican : https://gitlab.com/pages/pelican
- - VoidSpaceXYZ's example hosted : https://voidspacexyz.gitlab.io/pages/
+ - [Gitlab on Pelican](https://gitlab.com/pages/pelican)
+ - [VoidSpaceXYZ's example hosted](https://voidspacexyz.gitlab.io/pages/)
 
