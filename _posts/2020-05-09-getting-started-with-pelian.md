@@ -33,7 +33,7 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 ### 1. Installations
 ---
 - #### Install Python<hr>
- `sudo add-apt-repository ppa:jonathonf/python-3.6`
+ `sudo add-apt-repository ppa:jonathonf/python-3.6`<br>
  `sudo apt-get update && sudo apt-get install python3.6`
 
 - #### Install PIP<hr>
@@ -42,8 +42,7 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 
 - #### Install Git<hr>
  `sudo apt install git`<br>
- 
- if any erro persists try <br>
+  if any erro persists try <br>
  `sudo add-apt-repository ppa:git-core/ppa`<br>
  `sudo apt update`<br>
  `sudo apt install git`
@@ -51,10 +50,11 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 - #### Install Virtualenv<hr>
  `sudo apt install virtualenv`<br>
  `virtualenv pelican`
- 
+<br>
+
 ### 2. Configuration
 ---
-- #### Configure Virtualenv<hr>
+Configure Virtualenv<hr>
 It creates an environment and its suggested to overcome conflits when multiple projects in a machine and libraries issues.
 
  `virtualenv pelican`<br>
@@ -62,8 +62,7 @@ It creates an environment and its suggested to overcome conflits when multiple p
  `source bin/activate`<br><br>  
   Output<br>
   `(pelican) z@zphoenix:~/pelican$`
-  
-- #### 
+<br>
   
 ### 3. Create a repo/project in gitlab
 ---
@@ -83,11 +82,11 @@ It creates an environment and its suggested to overcome conflits when multiple p
   - #### Create a new group
   Firstly lets create a group & click the link to create a new group :  https://gitlab.com/groups/new
   
-   <media-tag src="https://files.cryptpad.fr/blob/2d/2dbb9406bb61f31c790ed7d040056d2b9b9fcad01d7d2227" data-crypto-key="cryptpad:lnwV75oY16Z01nV+NYL7U5i/7e2SaVEVBNcV8Sc9oIY="></media-tag><br><br>
+   ![img1](/assets/img/blog/pelican1.png)<br><br>
         
     _Note : _In the place of `zphoenix` have your `username`.
     
-   <media-tag src="https://files.cryptpad.fr/blob/a7/a71f985d1ab336b8db8823444cdb0ea8fc070e25dad1d764" data-crypto-key="cryptpad:JTflyUSMaoa4FvX9Ei7AH8ewIwu8d1u3VLtTiCn62zk="></media-tag><br><br>
+   ![img1](/assets/img/blog/pelican2.png)<br><br>
     
     So we create a new project under same name `blog-username.gitlab.io`<br>
     
@@ -120,7 +119,7 @@ It creates an environment and its suggested to overcome conflits when multiple p
 - #### Get a basic site<hr>
   `pelican-quickstart`<br><br>
   Output<br>
-  <media-tag src="https://files.cryptpad.fr/blob/f5/f5558820c5e603dd05d62e26129f70ed1f439b770a3a1d25" data-crypto-key="cryptpad:lMouPoaUPkn9WGOLcFGkNkc2Nz5Uvu0TTT0u9ZOC8mc="></media-tag><br><br>
+  ![img1](/assets/img/blog/pelican4.png)<br><br>
   _Note_ : This command generates all required files basically basic pelican structure, there will be questions poped up, makesure you give URL Prefix as __'blog-username.gitlab.io'__ and leave rest as default values [ (Y/n) have default value as Yes and (y/N) is vice-versa ]
 
 ### 5. Write the first blog
@@ -133,7 +132,8 @@ It creates an environment and its suggested to overcome conflits when multiple p
  
  Add these below contents 
 
- >Title: My First Post<br>
+```
+Title: My First Post<br>
 Date: 2020-05-08 18:59<br>
 Modified: 2020-05-09 19:30<br>
 Category: Python<br>
@@ -141,7 +141,9 @@ Tags: pelican, publishing<br>
 Slug: my-super-post<br>
 Authors: zphoenix, GLUG PESCE<br>
 Summary: Short version for index and feeds<br><br>
- >This is the content of my super blog post.
+ 
+ This is the content of my super blog post.
+```
 
  _Note_ : Reference - https://docs.getpelican.com/en/3.6.3/content.html
  
@@ -160,7 +162,7 @@ Inorder to preview the firstPost.md - The blog post<br>
  Now open http://localhost:8000 in your web browser, your very first pelican based blog site is hosted locally :)
  
  Output
- <media-tag src="https://files.cryptpad.fr/blob/b1/b15a865b98d43e59296c394a3d1115d2637b27bde7e39e98" data-crypto-key="cryptpad:WJJCX4BeW1VKTswDDTbFSscEvt0ECUCZt9MhQDQWhpc="></media-tag><br><br>
+ ![img1](/assets/img/blog/pelican5.png)<br><br>
  
  **Hurray !!!! Congratulations here goes your Pelican BLog Post**
 <br>
@@ -184,18 +186,17 @@ We all may run different python environments and with different versions and we 
   `touch .gitlab-ci.yml`<br>
   `nano .gitlab-ci.yml`<br><br>
   Paste these content in `.gitlab-ci.yml`<br>
-  <script src='https://gitlab.com/snippets/1974975.js'></script>
-  
-```
-image: python:3.6-alpine
 
-pages:
-  script:
-  - pip install -r requirements.txt
-  - pelican -s publishconf.py
-  artifacts:
-    paths:
-    - public/
+```
+   image: python:3.6-alpine
+
+   pages:
+     script:
+     - pip install -r requirements.txt
+     - pelican -s publishconf.py
+     artifacts:
+       paths:
+       - public/
 ```
 
 - #### Lets PUSH !!!<br>
