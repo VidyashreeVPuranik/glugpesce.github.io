@@ -220,7 +220,6 @@ We all may run different python environments and with different versions and we 
 - Get a new theme for your site
   We are working on a basic default one try to experiment with themes :)
 - Add few javascript tricks and let me know, im still learning JS !
-  
 <br>
 
 ### 9. Conclusion
@@ -234,10 +233,10 @@ If any errors do ping me  or if you had a better pelican hosted share it with me
 - Mastodon : zphoenix@fsmi.social
 
 
-**Reference**<hr>
+**Reference**
 
 - [Git and Git Configuration](https://glugpesce.github.io/event/2019/10/31/introduction-to-git.html)
-- Pelican Documentation](https://docs.getpelican.com/en/stable/)
+- [Pelican Documentation](https://docs.getpelican.com/en/stable/)
 - Pelican examples on Gitlab : 
 
  - [Gitlab on Pelican](https://gitlab.com/pages/pelican)
