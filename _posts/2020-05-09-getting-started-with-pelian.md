@@ -32,29 +32,39 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 
 ### 1. Installations
 ---
-- #### Install Python<hr>
-  `sudo add-apt-repository ppa:jonathonf/python-3.6`<br>
-  `sudo apt-get update && sudo apt-get install python3.6`
+- #### Install Python
 
-- #### Install PIP<hr>
+ `sudo apt-get install python3.6`<br>
+ 
+  or<br>
+ 
+ `sudo add-apt-repository ppa:deadsnakes/ppa`<br>
+ `sudo apt-get update`<br>
+ `sudo apt-get install python3.6`
+
+- #### Install PIP
+
   `sudo apt install python3-pip`<br>
   `sudo apt install build-essential python3-dev`
 
-- #### Install Git<hr>
+- #### Install Git
+
   `sudo apt install git`<br>
-   if any error persists try <br>
+  
+   #if any error persists try <br>
   `sudo add-apt-repository ppa:git-core/ppa`<br>
   `sudo apt update`<br>
   `sudo apt install git`
       
-- #### Install Virtualenv<hr>
+- #### Install Virtualenv
+
   `sudo apt install virtualenv`<br>
   `virtualenv pelican`
 <br>
 
 ### 2. Configuration
 ---
-Configure Virtualenv<hr>
+- #### Configure Virtualenv
 It creates an environment and its suggested to overcome conflits when multiple projects in a machine and libraries issues.
 
  `virtualenv pelican`<br>
@@ -66,13 +76,13 @@ It creates an environment and its suggested to overcome conflits when multiple p
   
 ### 3. Create a repo/project in gitlab
 ---
-- #### a. Sign Up<hr>
+- #### a. Sign Up
 
   Register here : https://gitlab.com/users/sign_up
   
   So we have two options
   
-  * Either get the pelican site running on `your_usernamegitlab.io `
+  * Either get the pelican site running on `your_username.gitlab.io `
   
       or 
       
@@ -90,7 +100,7 @@ It creates an environment and its suggested to overcome conflits when multiple p
     
     So we create a new project under same name `blog-username.gitlab.io`<br>
     
-- #### b. Clone the project<hr>
+- #### b. Clone the project
   
   Lets clone the project and start working on it. 
   
@@ -113,10 +123,13 @@ It creates an environment and its suggested to overcome conflits when multiple p
 ### 4. Initial setup to get Pelican
 ---
 
-- #### Installation<hr>
+- #### Installation
+
   `pip install pelican`<br>
   `pip install markdown`<br>
-- #### Get a basic site<hr>
+  
+- #### Get a basic site
+
   `pelican-quickstart`<br><br>
   Output<br>
   ![img1](/assets/img/blog/pelican4.png)<br><br>
@@ -125,7 +138,8 @@ It creates an environment and its suggested to overcome conflits when multiple p
 ### 5. Write the first blog
 ---
 
-- #### Create a blog post <hr>
+- #### Create a blog post
+
   `cd content`<br>
   `touch firstPost.md` #To create the file<br>
   `nano firstPost.md` #To open the file<br>
@@ -138,21 +152,23 @@ It creates an environment and its suggested to overcome conflits when multiple p
   Modified: 2020-05-09 19:30<br>
   Category: Python<br>
   Tags: pelican, publishing<br>
-  Slug: my-super-post<br>
+  Slug: my-first-post<br>
   Authors: zphoenix, GLUG PESCE<br>
   Summary: Short version for index and feeds<br><br>
  
    This is the content of my super blog post.
   ```
 
- _Note_ : Reference - https://docs.getpelican.com/en/3.6.3/content.html
+ _Note_ : Reference - https://docs.getpelican.com/en/3.6.3/content.html and Slug is nothing but filename without space, makesure to give `-` instaed of ` ` #space
  
- Once you are donepress `ctrl + s` to save and `ctrl + x` to exit from nano editor.<br>
-- #### Convert post into html<br>
+ Once you are done press `ctrl + s` to save and `ctrl + x` to exit from nano editor.<br>
+ 
+- #### Convert post into html
+
   `pelican content`<br>
-  or<br>
   `make html`<br>
-  Try to check if public folder is created, if that has generated procedd, else cross check and try again!!!<br>
+  
+  Try to check if public folder is created, if that has generated proceEd, else cross check and try again!!!<br>
  
 
 ###  6. The OUTPUT
@@ -166,14 +182,21 @@ Inorder to preview the firstPost.md - The blog post<br>
  
  **Hurray !!!! Congratulations here goes your Pelican BLog Post**
 <br>
-
+ _Note :_ To preview in our localhost you can even `cd` into `public` folder and type 
+ 
+ - `python -m SimpleHTTPServer` #if using Python2 
+ - `python -m http.server` #if using Python3<br>
+ 
 ### 7. Thinking to host Pelican?
 ---
-Lets get two important files<br>
-But before getting into it lets try do get a requirements.txt file. Why is requirements.txt is important?<br>
-We all may run different python environments and with different versions and we primarily generate and share requirements.txt file to make it easier for other developers to install the correct versions of the required Python libraries/Packages to run the Python code that we have written.<br>
- `touch requirements.txt`<br>
- `nano requirements.txt`<br><br>
+Lets get three important files<br>
+
+- #### requirement.txt
+  But before getting into it lets try do get a requirements.txt file. Why is requirements.txt is important?<br>
+  We all may run different python environments and with different versions and we primarily generate and share requirements.txt file to make it easier for other developers to install the correct versions of the required Python libraries/Packages to run the Python code that we have written.<br>
+  
+   `touch requirements.txt`<br>
+   `nano requirements.txt`<br><br>
  Paste the below contents in `requirements.txt`<br>
  
 ```
@@ -197,8 +220,22 @@ We all may run different python environments and with different versions and we 
      artifacts:
        paths:
        - public/
- ```
+     only:
+       - master
+   ```
+ 
+- #### .gitignore<hr>
+  Lets create a .gitignore.<br>
+  
+   `touch .gitignore`<br>
+   `nano .gitignore`<br><br>
+   Paste these content in `.gitignore`<br>
 
+  ```
+   /public
+   *.pyc
+  ```
+  <br>
 - #### Lets PUSH !!!<br>
    Now lets push the pelican source code.
    
@@ -207,9 +244,11 @@ We all may run different python environments and with different versions and we 
     git commit -m "First Commit to add Pelican Blog Site"
     git push
   ```
+  <br>
 - #### CI/CD Configuration<hr>
    So go to CI/CD - > pipeline -> jobs<br>
    If the status of your job is `passed` then your Pelican based Blog Site you will find it at `blog-username.gitlab.io`<br><br>
+   ![img1](/assets/img/blog/pelican6.png)<br><br>
    So your dream come true your very own Blog site LIVE !!! - Check out it here - blog-zphoenix.gitlab.io
 <br>
 
@@ -225,6 +264,8 @@ We all may run different python environments and with different versions and we 
 ### 9. Conclusion
 ---
 Having said this blog is just a kickstart and its only your try will fetch you a great work out of you. Pelican is python based and its so easy to work and deploy too. And ifou are looking for a [ready repo](https://gitlab.com/blog-zphoenix/blog-zphoenix.gitlab.io).
+
+In the virtue of getting writing this blog here is the OUTPUT : https://blog-zphoenix.gitlab.io/<br>
 
 If any errors do ping me  or if you had a better pelican hosted share it with me, there will be something that i can learn from yours.
 
