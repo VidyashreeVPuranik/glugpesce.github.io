@@ -27,8 +27,9 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 5. Write the first blog
 6. The OUTPUT
 7. Thinking to host Pelican? 
-8. Futuristic
-9. Conclusion
+8. THEMENATION - Adding a theme
+9. Futuristic
+10. Conclusion
 
 ### 1. Installations
 ---
