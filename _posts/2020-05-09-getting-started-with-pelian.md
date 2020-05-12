@@ -34,13 +34,13 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 ---
 - #### Install Python
 
- `sudo apt-get install python3.6`<br>
+  `sudo apt-get install python3.6`<br>
  
   or<br>
  
- `sudo add-apt-repository ppa:deadsnakes/ppa`<br>
- `sudo apt-get update`<br>
- `sudo apt-get install python3.6`
+  `sudo add-apt-repository ppa:deadsnakes/ppa`<br>
+  `sudo apt-get update`<br>
+  `sudo apt-get install python3.6`
 
 - #### Install PIP
 
@@ -67,10 +67,10 @@ Pelican takes the content in mostly as text or markdown format, push it to a tem
 - #### Configure Virtualenv
 It creates an environment and its suggested to overcome conflits when multiple projects in a machine and libraries issues.
 
- `virtualenv pelican`<br>
- `cd pelican`<br>
- `source bin/activate`<br>
-  Output<br>
+  `virtualenv pelican`<br>
+  `cd pelican`<br>
+  `source bin/activate`<br>
+   Output<br>
   `(pelican) z@zphoenix:~/pelican$`
 <br>
   
@@ -173,15 +173,15 @@ It creates an environment and its suggested to overcome conflits when multiple p
 
 ###  6. The OUTPUT
 ---
-Inorder to preview the firstPost.md - The blog post<br>
- `make serve`<br>
+Inorder to preview the firstPost.md - The blog post in your terminal type <br><br>
+ `make serve`<br><br>
  Now open http://localhost:8000 in your web browser, your very first pelican based blog site is hosted locally :)
  
- Output
+ **Output**<br>
  ![img1](/assets/img/blog/pelican5.png)<br><br>
  
  **Hurray !!!! Congratulations here goes your Pelican BLog Post**
-<br>
+<br><br>
  _Note :_ To preview in our localhost you can even `cd` into `public` folder and type 
  
  - `python -m SimpleHTTPServer` #if using Python2 
@@ -199,10 +199,10 @@ Lets get three important files<br>
    `nano requirements.txt`<br><br>
  Paste the below contents in `requirements.txt`<br>
  
-```
- markdown
- pelican
-```
+   ```
+    markdown
+    pelican
+   ```
 
 - #### .gitlab-ci.yml<hr>
   It is a configuration file that will build and deploy or host our website in Gitlab Pages.<br>
