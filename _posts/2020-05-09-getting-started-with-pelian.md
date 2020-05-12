@@ -252,16 +252,91 @@ Lets get three important files<br>
    So your dream come true your very own Blog site LIVE !!! - Check out it here - blog-zphoenix.gitlab.io
 <br>
 
-### 8. Futuristic
+### 8. THEMENATION - Adding a Theme
 ---
-- Add more post
-  Start writing blogs buddies 
-- Get a new theme for your site
-  We are working on a basic default one try to experiment with themes :)
-- Add few javascript tricks and let me know, im still learning JS !
+
+- #### Get the Theme and Plugin
+  So there is huge collection of [Pelican Themes](https://github.com/getpelican/pelican-themes), amongst it i liked [pelican-bootstrap3](https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3).
+  
+  `cd ..`<br>
+  `pwd`<br>
+  `/home/z/pelican`<br><br>
+  #Clone Theme<br>
+  `git clone https://github.com/getpelican/pelican-themes.git`<br><br>
+  Now cd into pelican-themes, copy `pelican-bootstrap3` into `blog-username.gitlab.io` directory<br>
+  
+  #Clone Pelican Plugin<br>
+  `git clone https://github.com/getpelican/pelican-plugins.git`<br><br>
+  Now cd into pelican-plugins,search and copy `i18n_subsites` into a new subdirectory called `plugins` in `blog-username.gitlab.io` directory<br><br>
+
+- #### Configuration
+  Now edit peliconconfig.py file
+  
+  ```
+  # THEME CONFIG
+  THEME = 'pelican-bootstrap3'
+  JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+  PLUGIN_PATHS = ['plugins']
+  PLUGINS = ['i18n_subsites']
+  BANNER = 'assets/banner.jpg'
+  BANNER_SUBTITLE = "Your banner message here."
+  STATIC_PATHS = ['assets']
+  ```
+- #### The file structure [ A cross verification ]
+  The filestructure is very simple 
+
+  ```
+  blog-username.gitlab.io
+  |
+  |   pelicanconf.py
+  |   pelicanconfig.pyc
+  |   publishconf.py
+  |   Makefile
+  |   test.py
+  |   .gitlab-ci.yml
+  |   .gitignore
+  |   requirements.txt
+  |   README.md
+  |
+  |---content
+  |   |---assets
+  |   |   |   banner.jpg
+  |   |   |---img
+  |   |  
+  |   |---posts
+  |   |   |   firstPost.md
+  |   |   |   secondPost.md
+  |       
+  |---pelican-bootstrap3
+  |---plugins
+  |   |---i18n_subsites
+  |      
+  |---public
+  
+  ```
+
+- #### Lets deploy
+
+  `cd blog-username.gitlab.io`<br>
+  `pelican content`<br>
+  `make html`<br>
+  `make serve`<br><br>
+  
+  **OUTPUT**<br>
+  ![img1](/assets/img/blog/pelican7.png)<br><br>
+  
 <br>
 
-### 9. Conclusion
+### 9. Futuristic
+---
+- Add more post - Start writing blogs buddies 
+- Get a new theme for your site
+  Try a different one, try to experiment with themes :)
+- Add few javascript tricks and let me know, im still learning JS !
+  
+<br>
+
+### 10. Conclusion
 ---
 Having said this blog is just a kickstart and its only your try will fetch you a great work out of you. Pelican is python based and its so easy to work and deploy too. And ifou are looking for a [ready repo](https://gitlab.com/blog-zphoenix/blog-zphoenix.gitlab.io).
 
