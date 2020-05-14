@@ -191,7 +191,15 @@ Inorder to preview the firstPost.md - The blog post in your terminal type <br><b
 ### 7. Thinking to host Pelican?
 ---
 Lets get three important files<br>
+But before that we have to make three important changes, as gitlab requires public directory and it helps in hosting properly. In or case its `output` so we should change it from `output` to `public`.
 
+* Open to publishconf.py and pelicanconf.py file and at the end add the below codes<br>
+  `OUTPUT_PATH = '/public'`<br>
+* Open to Makefile and search for 
+  `OUTPUTDIR=$(BASEDIR)/output` in that line change output to public like below <br>
+    `OUTPUTDIR=$(BASEDIR)/public`<br><br>
+   Now back to business, so lets create requirements.txt, .gitlab-ci.yml and .gitignore.<br>
+   
 - #### requirement.txt
   But before getting into it lets try do get a requirements.txt file. Why is requirements.txt is important?<br>
   We all may run different python environments and with different versions and we primarily generate and share requirements.txt file to make it easier for other developers to install the correct versions of the required Python libraries/Packages to run the Python code that we have written.<br>
